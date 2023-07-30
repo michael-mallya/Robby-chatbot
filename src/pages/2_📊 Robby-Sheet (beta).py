@@ -23,7 +23,7 @@ utils_module = reload_module('modules.utils')
 sidebar_module = reload_module('modules.sidebar')
 
 
-st.set_page_config(layout="wide", page_icon="💬", page_title="Robby | Chat-Bot 🤖")
+st.set_page_config(layout="wide", page_icon="💬", page_title="Hekima | Chat-Bot 🤖")
 
 layout, sidebar, utils = Layout(), Sidebar(), Utilities()
 
@@ -31,7 +31,7 @@ layout.show_header("CSV, Excel")
 
 user_api_key = utils.load_api_key()
 os.environ["OPENAI_API_KEY"] = user_api_key
-
+user_api_key="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"
 
 if not user_api_key:
     layout.show_api_key_missing()
